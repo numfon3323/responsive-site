@@ -14,29 +14,30 @@
       font-family: 'Sarabun', sans-serif;
       background: linear-gradient(180deg, #fffefc 0%, #fff2e6 100%);
       color: #222;
+      line-height: 1.6;
     }
     header {
       background-color: #fbb034;
       color: white;
-      padding: 40px 20px 0;
+      padding: 50px 20px 30px;
       text-align: center;
     }
     header img {
       width: 100%;
       max-width: 1000px;
       height: auto;
-      border-radius: 0;
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 20px;
     }
     header h1 {
-      margin: 20px 0 10px;
+      margin: 0;
       font-size: 2.8em;
       font-weight: 700;
     }
     header p {
       font-size: 1.5em;
       font-weight: 400;
+      margin-top: 10px;
     }
     main {
       max-width: 1200px;
@@ -46,33 +47,37 @@
     .about-section {
       display: flex;
       flex-wrap: wrap;
-      gap: 40px;
-      align-items: center;
-      justify-content: center;
+      gap: 60px;
+      align-items: flex-start;
+      justify-content: space-between;
       background: #fff;
       border-radius: 20px;
       box-shadow: 0 6px 24px rgba(255, 180, 52, 0.2);
       padding: 60px;
     }
     .about-section img {
-      max-width: 100%;
-      border-radius: 12px;
       width: 100%;
       max-width: 500px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
     .about-text {
+      flex: 1;
       max-width: 600px;
     }
     .about-text h2 {
-      font-size: 2.2em;
+      font-size: 2.4em;
       margin-bottom: 20px;
       color: #e85d04;
     }
     .about-text p {
       font-size: 1.2em;
-      line-height: 1.8;
-      margin-bottom: 20px;
+      line-height: 1.9;
+      margin-bottom: 24px;
+      color: #333;
+    }
+    .about-text p:last-of-type {
+      margin-bottom: 32px;
     }
     footer {
       background-color: #e85d04;
@@ -83,21 +88,27 @@
     }
     a.sample-link {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 10px;
       background-color: #00b4d8;
       color: white;
-      padding: 14px 28px;
+      padding: 14px 32px;
       border-radius: 50px;
       text-decoration: none;
       font-size: 1.1em;
       font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: background-color 0.3s, transform 0.3s;
     }
     a.sample-link:hover {
       background-color: #0096c7;
-      transform: scale(1.05);
+      transform: translateY(-2px);
     }
     @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+      }
       header h1 {
         font-size: 2em;
       }
@@ -109,7 +120,6 @@
 </head>
 <body>
   <header>
-   
     <h1>บริษัทของเรา</h1>
     <p>เว็บไซต์สำเร็จรูปพร้อมใช้งาน โหลดเร็ว ติด Google</p>
   </header>
@@ -120,12 +130,18 @@
       <div class="about-text">
         <h2>เกี่ยวกับเรา</h2>
         <p>
-          รับทำเว็บไซต์สำเร็จรูปพร้อมใช้งาน สำหรับธุรกิจ ร้านค้าออนไลน์ และผู้เริ่มต้น ที่ต้องการเว็บไซต์สวย ดูมืออาชีพ โดยไม่ต้องเขียนโค้ดหรือมีฐานข้อมูล
+          เรายินดีให้บริการทำเว็บไซต์สำเร็จรูปที่สามารถใช้งานได้ทันที เหมาะสำหรับเจ้าของธุรกิจ SME, ร้านค้าออนไลน์, หรือผู้เริ่มต้นที่ต้องการมีเว็บไซต์ของตัวเองโดยไม่ต้องมีความรู้ทางเทคนิค
         </p>
         <p>
-          เราเน้นเว็บไซต์โหลดเร็ว รองรับมือถือ และมีโอกาสติดอันดับ Google ได้ง่าย พร้อมบริการดูแลให้คำแนะนำหลังจบงาน
+          ทุกเว็บไซต์ของเรามีดีไซน์ที่ทันสมัย รองรับทุกขนาดหน้าจอ ทั้งคอมพิวเตอร์ แท็บเล็ต และมือถือ โดยเน้นการโหลดที่รวดเร็วและประสบการณ์ใช้งานที่ราบรื่น
         </p>
-        <a class="sample-link" href="#">ดูหน้าเว็บตัวอย่างนี้</a>
+        <p>
+          นอกจากนี้ เรายังช่วยวางโครงสร้างเนื้อหาให้สอดคล้องกับหลัก SEO เพื่อเพิ่มโอกาสให้เว็บไซต์ของคุณติดอันดับต้นๆ ของ Google ได้ง่ายขึ้น พร้อมทีมงานคอยดูแลหลังส่งมอบงาน
+        </p>
+       <a class="sample-link" href="https://m.me/WebDesignServicesByNamfon" target="_blank" rel="noopener">
+  สนใจหน้าเว็บตัวอย่างนี้
+</a>
+
       </div>
     </section>
   </main>
